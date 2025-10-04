@@ -1,4 +1,7 @@
 
+using Microsoft.EntityFrameworkCore;
+using ProductService.Infrastructure.Contexts;
+
 namespace ProductService
 {
     public class Program
@@ -13,6 +16,10 @@ namespace ProductService
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+
+            builder.Services.AddDbContext<ProductDatabaseContext>(p =>
+                p.UseSqlServer(builder.Configuration["ProductConnection"]));
 
             var app = builder.Build();
 
