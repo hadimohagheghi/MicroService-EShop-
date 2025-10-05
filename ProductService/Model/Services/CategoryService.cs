@@ -1,0 +1,41 @@
+﻿using ProductService.Infrastructure.Contexts;
+using ProductService.Model.Dto;
+using ProductService.Model.Entities;
+using ProductService.Model.Services.Interface;
+
+namespace ProductService.Model.Services
+{
+    public class CategoryService : ICategoryService
+    {
+        private readonly ProductDatabaseContext context;
+
+        public CategoryService(ProductDatabaseContext context)
+        {
+            this.context = context;
+        }
+
+        public void AddNewCategory(CategoryDto category)
+        {
+            Category newCategory = new Category
+            {
+                Description = category.Description,
+                Name = category.Name,
+            };
+            context.Categories.Add(newCategory);
+            context.SaveChanges();
+        }
+
+        public List<CategoryDto> GetCategories()
+        {
+            var data = context.Categories
+                .OrderBy(p => p.Name)
+                .Select(p => new CategoryDto
+                {
+                    Description = p.Description,
+                    Name = p.Name,
+                    Id = p.Id
+                }).ToList();
+            return data;
+        }
+    }
+}
