@@ -1,4 +1,7 @@
 
+using DiscountService.Infrastructure.Contexts;
+using Microsoft.EntityFrameworkCore;
+
 namespace DiscountService
 {
     public class Program
@@ -13,6 +16,10 @@ namespace DiscountService
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddDbContext<DiscountDataBaseContext>(o => o.UseSqlServer
+                (builder.Configuration["DiscountConnection"]));
+
 
             var app = builder.Build();
 
