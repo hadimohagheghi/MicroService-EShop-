@@ -26,7 +26,9 @@ namespace BasketService.Model.Services
                 throw new Exception("Basket Not Found....!");
 
             //اگر بسکت پیدا شد اونو به dto مپ می کنیم
+            //چون فیلدها همنام هستند به صورت خودکار مپ می شوند
             var basketItem = mapper.Map<BasketItem>(item);
+
             basket.Items.Add(basketItem);
             context.SaveChanges();
         }
@@ -101,6 +103,11 @@ namespace BasketService.Model.Services
             context.SaveChanges();
         }
 
+        /// <summary>
+        /// انتقال سبد خرید از حالت ناشناس به کاربر لاگین شده
+        /// </summary>
+        /// <param name="anonymousId"></param>
+        /// <param name="UserId"></param>
         public void TransferBasket(string anonymousId, string UserId)
         {
             var anonymousBasket = context.Baskets

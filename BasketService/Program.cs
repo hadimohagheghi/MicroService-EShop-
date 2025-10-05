@@ -1,6 +1,7 @@
 
 using BasketService.Infrastructure.Contexts;
 using BasketService.Infrastructure.MappingProfile;
+using BasketService.Model.Services.Interface;
 using Microsoft.EntityFrameworkCore;
 
 namespace BasketService
@@ -23,6 +24,8 @@ namespace BasketService
                 (builder.Configuration["BasketConnection"]));
 
             builder.Services.AddAutoMapper(typeof(BasketMappingProfile));
+
+            builder.Services.AddTransient<IBasketService, BasketService.Model.Services.BasketService>();
 
             var app = builder.Build();
 
