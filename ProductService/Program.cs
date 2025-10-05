@@ -1,6 +1,8 @@
-
+﻿
 using Microsoft.EntityFrameworkCore;
 using ProductService.Infrastructure.Contexts;
+using ProductService.Model.Services;
+using ProductService.Model.Services.Interface;
 
 namespace ProductService
 {
@@ -20,6 +22,11 @@ namespace ProductService
 
             builder.Services.AddDbContext<ProductDatabaseContext>(p =>
                 p.UseSqlServer(builder.Configuration["ProductConnection"]));
+
+            //چون این کلاس همنام پوژه هستش باید آدرس کاملش رو ذکر کنیم
+            builder.Services.AddTransient<IProductService, Model.Services.ProductService>();
+            builder.Services.AddTransient<ICategoryService, CategoryService>();
+
 
             var app = builder.Build();
 
