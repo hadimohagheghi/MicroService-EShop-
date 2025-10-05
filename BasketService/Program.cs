@@ -1,4 +1,7 @@
 
+using BasketService.Infrastructure.Contexts;
+using Microsoft.EntityFrameworkCore;
+
 namespace BasketService
 {
     public class Program
@@ -13,6 +16,11 @@ namespace BasketService
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+
+            builder.Services.AddDbContext<BasketDataBaseContext>(o => o.UseSqlServer
+                (builder.Configuration["BasketConnection"]));
+
 
             var app = builder.Build();
 
