@@ -50,9 +50,9 @@ namespace DiscountService.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::DiscountService.Proto.ResultGetDiscountByCode> __Marshaller_ResultGetDiscountByCode = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DiscountService.Proto.ResultGetDiscountByCode.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::DiscountService.Proto.RequestUsedDiscount> __Marshaller_RequestUsedDiscount = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DiscountService.Proto.RequestUsedDiscount.Parser));
+    static readonly grpc::Marshaller<global::DiscountService.Proto.RequestUseDiscount> __Marshaller_RequestUseDiscount = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DiscountService.Proto.RequestUseDiscount.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::DiscountService.Proto.ResultUsedDiscount> __Marshaller_ResultUsedDiscount = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DiscountService.Proto.ResultUsedDiscount.Parser));
+    static readonly grpc::Marshaller<global::DiscountService.Proto.ResultUseDiscount> __Marshaller_ResultUseDiscount = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DiscountService.Proto.ResultUseDiscount.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::DiscountService.Proto.RequestAddNewDiscount> __Marshaller_RequestAddNewDiscount = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DiscountService.Proto.RequestAddNewDiscount.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -67,12 +67,12 @@ namespace DiscountService.Proto {
         __Marshaller_ResultGetDiscountByCode);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::DiscountService.Proto.RequestUsedDiscount, global::DiscountService.Proto.ResultUsedDiscount> __Method_UsedDiscount = new grpc::Method<global::DiscountService.Proto.RequestUsedDiscount, global::DiscountService.Proto.ResultUsedDiscount>(
+    static readonly grpc::Method<global::DiscountService.Proto.RequestUseDiscount, global::DiscountService.Proto.ResultUseDiscount> __Method_UseDiscount = new grpc::Method<global::DiscountService.Proto.RequestUseDiscount, global::DiscountService.Proto.ResultUseDiscount>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "UsedDiscount",
-        __Marshaller_RequestUsedDiscount,
-        __Marshaller_ResultUsedDiscount);
+        "UseDiscount",
+        __Marshaller_RequestUseDiscount,
+        __Marshaller_ResultUseDiscount);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::DiscountService.Proto.RequestAddNewDiscount, global::DiscountService.Proto.ResultAddNewDiscount> __Method_AddNewDiscount = new grpc::Method<global::DiscountService.Proto.RequestAddNewDiscount, global::DiscountService.Proto.ResultAddNewDiscount>(
@@ -99,7 +99,7 @@ namespace DiscountService.Proto {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::DiscountService.Proto.ResultUsedDiscount> UsedDiscount(global::DiscountService.Proto.RequestUsedDiscount request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::DiscountService.Proto.ResultUseDiscount> UseDiscount(global::DiscountService.Proto.RequestUseDiscount request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -160,24 +160,24 @@ namespace DiscountService.Proto {
         return CallInvoker.AsyncUnaryCall(__Method_GetDiscountByCode, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::DiscountService.Proto.ResultUsedDiscount UsedDiscount(global::DiscountService.Proto.RequestUsedDiscount request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::DiscountService.Proto.ResultUseDiscount UseDiscount(global::DiscountService.Proto.RequestUseDiscount request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return UsedDiscount(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return UseDiscount(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::DiscountService.Proto.ResultUsedDiscount UsedDiscount(global::DiscountService.Proto.RequestUsedDiscount request, grpc::CallOptions options)
+      public virtual global::DiscountService.Proto.ResultUseDiscount UseDiscount(global::DiscountService.Proto.RequestUseDiscount request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_UsedDiscount, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_UseDiscount, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::DiscountService.Proto.ResultUsedDiscount> UsedDiscountAsync(global::DiscountService.Proto.RequestUsedDiscount request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::DiscountService.Proto.ResultUseDiscount> UseDiscountAsync(global::DiscountService.Proto.RequestUseDiscount request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return UsedDiscountAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return UseDiscountAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::DiscountService.Proto.ResultUsedDiscount> UsedDiscountAsync(global::DiscountService.Proto.RequestUsedDiscount request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::DiscountService.Proto.ResultUseDiscount> UseDiscountAsync(global::DiscountService.Proto.RequestUseDiscount request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_UsedDiscount, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_UseDiscount, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::DiscountService.Proto.ResultAddNewDiscount AddNewDiscount(global::DiscountService.Proto.RequestAddNewDiscount request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
@@ -214,7 +214,7 @@ namespace DiscountService.Proto {
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GetDiscountByCode, serviceImpl.GetDiscountByCode)
-          .AddMethod(__Method_UsedDiscount, serviceImpl.UsedDiscount)
+          .AddMethod(__Method_UseDiscount, serviceImpl.UseDiscount)
           .AddMethod(__Method_AddNewDiscount, serviceImpl.AddNewDiscount).Build();
     }
 
@@ -226,7 +226,7 @@ namespace DiscountService.Proto {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, DiscountServiceProtoBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_GetDiscountByCode, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::DiscountService.Proto.RequestGetDiscountByCode, global::DiscountService.Proto.ResultGetDiscountByCode>(serviceImpl.GetDiscountByCode));
-      serviceBinder.AddMethod(__Method_UsedDiscount, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::DiscountService.Proto.RequestUsedDiscount, global::DiscountService.Proto.ResultUsedDiscount>(serviceImpl.UsedDiscount));
+      serviceBinder.AddMethod(__Method_UseDiscount, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::DiscountService.Proto.RequestUseDiscount, global::DiscountService.Proto.ResultUseDiscount>(serviceImpl.UseDiscount));
       serviceBinder.AddMethod(__Method_AddNewDiscount, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::DiscountService.Proto.RequestAddNewDiscount, global::DiscountService.Proto.ResultAddNewDiscount>(serviceImpl.AddNewDiscount));
     }
 

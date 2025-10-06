@@ -27,24 +27,23 @@ namespace DiscountService.Proto {
             "ChxQcm90by9EaXNjb3VudHByb3RvYnVmLnByb3RvIigKGFJlcXVlc3RHZXRE",
             "aXNjb3VudEJ5Q29kZRIMCgRDb2RlGAEgASgJIlEKF1Jlc3VsdEdldERpc2Nv",
             "dW50QnlDb2RlEgoKAklkGAEgASgJEg4KBkFtb3VudBgCIAEoBRIMCgRDb2Rl",
-            "GAMgASgJEgwKBFVzZWQYBCABKAgiIQoTUmVxdWVzdFVzZWREaXNjb3VudBIK",
-            "CgJJZBgBIAEoCSInChJSZXN1bHRVc2VkRGlzY291bnQSEQoJaXNTdWNjZXNz",
-            "GAEgASgIIjUKFVJlcXVlc3RBZGROZXdEaXNjb3VudBIOCgZBbW91bnQYASAB",
-            "KAUSDAoEQ29kZRgCIAEoCSIpChRSZXN1bHRBZGROZXdEaXNjb3VudBIRCglp",
-            "c1N1Y2Nlc3MYASABKAgy3AEKFERpc2NvdW50U2VydmljZVByb3RvEkgKEUdl",
-            "dERpc2NvdW50QnlDb2RlEhkuUmVxdWVzdEdldERpc2NvdW50QnlDb2RlGhgu",
-            "UmVzdWx0R2V0RGlzY291bnRCeUNvZGUSOQoMVXNlZERpc2NvdW50EhQuUmVx",
-            "dWVzdFVzZWREaXNjb3VudBoTLlJlc3VsdFVzZWREaXNjb3VudBI/Cg5BZGRO",
-            "ZXdEaXNjb3VudBIWLlJlcXVlc3RBZGROZXdEaXNjb3VudBoVLlJlc3VsdEFk",
-            "ZE5ld0Rpc2NvdW50QhiqAhVEaXNjb3VudFNlcnZpY2UuUHJvdG9iBnByb3Rv",
-            "Mw=="));
+            "GAMgASgJEgwKBFVzZWQYBCABKAgiIAoSUmVxdWVzdFVzZURpc2NvdW50EgoK",
+            "AklkGAEgASgJIiYKEVJlc3VsdFVzZURpc2NvdW50EhEKCWlzU3VjY2VzcxgB",
+            "IAEoCCI1ChVSZXF1ZXN0QWRkTmV3RGlzY291bnQSDgoGQW1vdW50GAEgASgF",
+            "EgwKBENvZGUYAiABKAkiKQoUUmVzdWx0QWRkTmV3RGlzY291bnQSEQoJaXNT",
+            "dWNjZXNzGAEgASgIMtkBChREaXNjb3VudFNlcnZpY2VQcm90bxJIChFHZXRE",
+            "aXNjb3VudEJ5Q29kZRIZLlJlcXVlc3RHZXREaXNjb3VudEJ5Q29kZRoYLlJl",
+            "c3VsdEdldERpc2NvdW50QnlDb2RlEjYKC1VzZURpc2NvdW50EhMuUmVxdWVz",
+            "dFVzZURpc2NvdW50GhIuUmVzdWx0VXNlRGlzY291bnQSPwoOQWRkTmV3RGlz",
+            "Y291bnQSFi5SZXF1ZXN0QWRkTmV3RGlzY291bnQaFS5SZXN1bHRBZGROZXdE",
+            "aXNjb3VudEIYqgIVRGlzY291bnRTZXJ2aWNlLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::DiscountService.Proto.RequestGetDiscountByCode), global::DiscountService.Proto.RequestGetDiscountByCode.Parser, new[]{ "Code" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DiscountService.Proto.ResultGetDiscountByCode), global::DiscountService.Proto.ResultGetDiscountByCode.Parser, new[]{ "Id", "Amount", "Code", "Used" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::DiscountService.Proto.RequestUsedDiscount), global::DiscountService.Proto.RequestUsedDiscount.Parser, new[]{ "Id" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::DiscountService.Proto.ResultUsedDiscount), global::DiscountService.Proto.ResultUsedDiscount.Parser, new[]{ "IsSuccess" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DiscountService.Proto.RequestUseDiscount), global::DiscountService.Proto.RequestUseDiscount.Parser, new[]{ "Id" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DiscountService.Proto.ResultUseDiscount), global::DiscountService.Proto.ResultUseDiscount.Parser, new[]{ "IsSuccess" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DiscountService.Proto.RequestAddNewDiscount), global::DiscountService.Proto.RequestAddNewDiscount.Parser, new[]{ "Amount", "Code" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DiscountService.Proto.ResultAddNewDiscount), global::DiscountService.Proto.ResultAddNewDiscount.Parser, new[]{ "IsSuccess" }, null, null, null, null)
           }));
@@ -561,16 +560,16 @@ namespace DiscountService.Proto {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class RequestUsedDiscount : pb::IMessage<RequestUsedDiscount>
+  public sealed partial class RequestUseDiscount : pb::IMessage<RequestUseDiscount>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<RequestUsedDiscount> _parser = new pb::MessageParser<RequestUsedDiscount>(() => new RequestUsedDiscount());
+    private static readonly pb::MessageParser<RequestUseDiscount> _parser = new pb::MessageParser<RequestUseDiscount>(() => new RequestUseDiscount());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<RequestUsedDiscount> Parser { get { return _parser; } }
+    public static pb::MessageParser<RequestUseDiscount> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -586,7 +585,7 @@ namespace DiscountService.Proto {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public RequestUsedDiscount() {
+    public RequestUseDiscount() {
       OnConstruction();
     }
 
@@ -594,15 +593,15 @@ namespace DiscountService.Proto {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public RequestUsedDiscount(RequestUsedDiscount other) : this() {
+    public RequestUseDiscount(RequestUseDiscount other) : this() {
       id_ = other.id_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public RequestUsedDiscount Clone() {
-      return new RequestUsedDiscount(this);
+    public RequestUseDiscount Clone() {
+      return new RequestUseDiscount(this);
     }
 
     /// <summary>Field number for the "Id" field.</summary>
@@ -620,12 +619,12 @@ namespace DiscountService.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as RequestUsedDiscount);
+      return Equals(other as RequestUseDiscount);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(RequestUsedDiscount other) {
+    public bool Equals(RequestUseDiscount other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -698,7 +697,7 @@ namespace DiscountService.Proto {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(RequestUsedDiscount other) {
+    public void MergeFrom(RequestUseDiscount other) {
       if (other == null) {
         return;
       }
@@ -759,16 +758,16 @@ namespace DiscountService.Proto {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class ResultUsedDiscount : pb::IMessage<ResultUsedDiscount>
+  public sealed partial class ResultUseDiscount : pb::IMessage<ResultUseDiscount>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<ResultUsedDiscount> _parser = new pb::MessageParser<ResultUsedDiscount>(() => new ResultUsedDiscount());
+    private static readonly pb::MessageParser<ResultUseDiscount> _parser = new pb::MessageParser<ResultUseDiscount>(() => new ResultUseDiscount());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<ResultUsedDiscount> Parser { get { return _parser; } }
+    public static pb::MessageParser<ResultUseDiscount> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -784,7 +783,7 @@ namespace DiscountService.Proto {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ResultUsedDiscount() {
+    public ResultUseDiscount() {
       OnConstruction();
     }
 
@@ -792,15 +791,15 @@ namespace DiscountService.Proto {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ResultUsedDiscount(ResultUsedDiscount other) : this() {
+    public ResultUseDiscount(ResultUseDiscount other) : this() {
       isSuccess_ = other.isSuccess_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ResultUsedDiscount Clone() {
-      return new ResultUsedDiscount(this);
+    public ResultUseDiscount Clone() {
+      return new ResultUseDiscount(this);
     }
 
     /// <summary>Field number for the "isSuccess" field.</summary>
@@ -818,12 +817,12 @@ namespace DiscountService.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as ResultUsedDiscount);
+      return Equals(other as ResultUseDiscount);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(ResultUsedDiscount other) {
+    public bool Equals(ResultUseDiscount other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -896,7 +895,7 @@ namespace DiscountService.Proto {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(ResultUsedDiscount other) {
+    public void MergeFrom(ResultUseDiscount other) {
       if (other == null) {
         return;
       }

@@ -6,7 +6,7 @@ service DiscountServiceProto
 {
 	rpc GetDiscountByCode(RequestGetDiscountByCode) returns(ResultGetDiscountByCode);
 
-	rpc UsedDiscount(RequestUsedDiscount) returns(ResultUsedDiscount);
+	rpc UseDiscount(RequestUseDiscount) returns(ResultUseDiscount);
 	
 	rpc AddNewDiscount(RequestAddNewDiscount) returns(ResultAddNewDiscount);
 }
@@ -25,11 +25,11 @@ message ResultGetDiscountByCode{
 
 
 
-message RequestUsedDiscount
+message RequestUseDiscount
 {
 	string Id=1;
 }
-message ResultUsedDiscount
+message ResultUseDiscount
 {
 	bool isSuccess=1;
 }
