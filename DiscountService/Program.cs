@@ -1,5 +1,7 @@
 
 using DiscountService.Infrastructure.Contexts;
+using DiscountService.Infrastructure.MappingProfile;
+using DiscountService.Model.Services.Interface;
 using Microsoft.EntityFrameworkCore;
 
 namespace DiscountService
@@ -20,6 +22,9 @@ namespace DiscountService
             builder.Services.AddDbContext<DiscountDataBaseContext>(o => o.UseSqlServer
                 (builder.Configuration["DiscountConnection"]));
 
+            builder.Services.AddAutoMapper(typeof(DiscountMappingProfile));
+
+            builder.Services.AddTransient<IDiscountService, DiscountService.Model.Services.DiscountService>();
 
             var app = builder.Build();
 
