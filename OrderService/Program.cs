@@ -1,6 +1,7 @@
 
 using Microsoft.EntityFrameworkCore;
 using OrderService.Infrastructure.Context;
+using OrderService.Model.Services.Interface;
 
 namespace OrderService
 {
@@ -19,6 +20,8 @@ namespace OrderService
 
             builder.Services.AddDbContext<OrderDataBaseContext>(o => o.UseSqlServer
                 (builder.Configuration["OrderConnection"]));
+
+            builder.Services.AddTransient<IOrderService, Model.Services.OrderService>();
 
             var app = builder.Build();
 
