@@ -1,4 +1,7 @@
 
+using Microsoft.EntityFrameworkCore;
+using OrderService.Infrastructure.Context;
+
 namespace OrderService
 {
     public class Program
@@ -13,6 +16,9 @@ namespace OrderService
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddDbContext<OrderDataBaseContext>(o => o.UseSqlServer
+                (builder.Configuration["OrderConnection"]));
 
             var app = builder.Build();
 
