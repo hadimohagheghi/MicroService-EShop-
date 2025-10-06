@@ -5,6 +5,9 @@
         public Guid Id { get; set; }
         public string UserId { get; private set; }
         public DateTime OrderPlaced { get; private set; }
+        /// <summary>
+        /// آیا پرداخت شده است؟
+        /// </summary>
         public bool OrderPaid { get; private set; }
         public ICollection<OrderLine> OrderLines { get; private set; }
 
