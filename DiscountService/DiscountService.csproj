@@ -10,8 +10,37 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Proto\Discountprotobuf.proto" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net8.0\DiscountService.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\net8.0\DiscountService.GlobalUsings.g.cs" />
+    <Compile Include="obj\Debug\net8.0\DiscountService.MvcApplicationPartsAssemblyInfo.cs" />
+    <Compile Include="obj\Debug\net8.0\Proto\Discountprotobuf.cs" />
+    <Compile Include="obj\Debug\net8.0\Proto\DiscountprotobufGrpc.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="obj\Debug\net8.0\DiscountService.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\net8.0\DiscountService.sourcelink.json" />
+    <Content Include="obj\Debug\net8.0\rbcswa.dswa.cache.json" />
+    <Content Include="obj\Debug\net8.0\rjsmcshtml.dswa.cache.json" />
+    <Content Include="obj\Debug\net8.0\rjsmrazor.dswa.cache.json" />
+    <Content Include="obj\Debug\net8.0\rpswa.dswa.cache.json" />
+    <Content Include="obj\Debug\net8.0\staticwebassets.build.endpoints.json" />
+    <Content Include="obj\Debug\net8.0\staticwebassets.build.json" />
+    <Content Include="obj\Debug\net8.0\staticwebassets.references.upToDateCheck.txt" />
+    <Content Include="obj\Debug\net8.0\staticwebassets.removed.txt" />
+    <Content Include="obj\DiscountService.csproj.nuget.dgspec.json" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.1.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="Grpc.AspNetCore" Version="2.71.0" />
 
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
@@ -29,6 +58,32 @@
 
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="obj\Debug\net8.0\staticwebassets\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="obj\Debug\net8.0\apphost.exe" />
+    <None Include="obj\Debug\net8.0\dfe805b7589f203f_Discountprotobuf.protodep" />
+    <None Include="obj\Debug\net8.0\Discount.96815C2F.Up2Date" />
+    <None Include="obj\Debug\net8.0\DiscountService.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net8.0\DiscountService.assets.cache" />
+    <None Include="obj\Debug\net8.0\DiscountService.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\net8.0\DiscountService.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net8.0\DiscountService.dll" />
+    <None Include="obj\Debug\net8.0\DiscountService.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net8.0\DiscountService.genruntimeconfig.cache" />
+    <None Include="obj\Debug\net8.0\DiscountService.MvcApplicationPartsAssemblyInfo.cache" />
+    <None Include="obj\Debug\net8.0\DiscountService.pdb" />
+    <None Include="obj\Debug\net8.0\refint\DiscountService.dll" />
+    <None Include="obj\Debug\net8.0\ref\DiscountService.dll" />
+    <None Include="obj\Debug\net8.0\staticwebassets.build.json.cache" />
+    <None Include="obj\DiscountService.csproj.nuget.g.props" />
+    <None Include="obj\DiscountService.csproj.nuget.g.targets" />
+    <None Include="obj\project.nuget.cache" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="Proto\Discountprotobuf.proto" GrpcServices="Both" />
   </ItemGroup>
 
 </Project>
