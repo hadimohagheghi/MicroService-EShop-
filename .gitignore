@@ -376,3 +376,7 @@ DiscountService/obj/Debug/net8.0/DiscountService.AssemblyInfo.cs
 DiscountService/obj/Debug/net8.0/rpswa.dswa.cache.json
 
 ProductService/obj/Debug/net8.0/ProductService.AssemblyInfo.cs
+
+*.sem
+
+ProductService/obj/Debug/net8.0/
