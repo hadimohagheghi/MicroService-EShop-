@@ -7,5 +7,6 @@ namespace DiscountService.Model.Services.Interface
         DiscountDto GetDiscountByCode(string Code);
         bool UseDiscount(Guid Id);
         bool AddNewDiscount(string Code, int Amount);
+        DiscountDto GetDiscountById(Guid parse);
     }
 }
