@@ -24,24 +24,30 @@ namespace DiscountService.Proto {
     static DiscountprotobufReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChxQcm90by9EaXNjb3VudHByb3RvYnVmLnByb3RvIigKGFJlcXVlc3RHZXRE",
-            "aXNjb3VudEJ5Q29kZRIMCgRDb2RlGAEgASgJIlEKF1Jlc3VsdEdldERpc2Nv",
-            "dW50QnlDb2RlEgoKAklkGAEgASgJEg4KBkFtb3VudBgCIAEoBRIMCgRDb2Rl",
-            "GAMgASgJEgwKBFVzZWQYBCABKAgiIAoSUmVxdWVzdFVzZURpc2NvdW50EgoK",
-            "AklkGAEgASgJIiYKEVJlc3VsdFVzZURpc2NvdW50EhEKCWlzU3VjY2VzcxgB",
-            "IAEoCCI1ChVSZXF1ZXN0QWRkTmV3RGlzY291bnQSDgoGQW1vdW50GAEgASgF",
-            "EgwKBENvZGUYAiABKAkiKQoUUmVzdWx0QWRkTmV3RGlzY291bnQSEQoJaXNT",
-            "dWNjZXNzGAEgASgIMtkBChREaXNjb3VudFNlcnZpY2VQcm90bxJIChFHZXRE",
-            "aXNjb3VudEJ5Q29kZRIZLlJlcXVlc3RHZXREaXNjb3VudEJ5Q29kZRoYLlJl",
-            "c3VsdEdldERpc2NvdW50QnlDb2RlEjYKC1VzZURpc2NvdW50EhMuUmVxdWVz",
-            "dFVzZURpc2NvdW50GhIuUmVzdWx0VXNlRGlzY291bnQSPwoOQWRkTmV3RGlz",
-            "Y291bnQSFi5SZXF1ZXN0QWRkTmV3RGlzY291bnQaFS5SZXN1bHRBZGROZXdE",
-            "aXNjb3VudEIYqgIVRGlzY291bnRTZXJ2aWNlLlByb3RvYgZwcm90bzM="));
+            "ChxQcm90by9EaXNjb3VudHByb3RvYnVmLnByb3RvIiQKFlJlcXVlc3RHZXRE",
+            "aXNjb3VudEJ5SWQSCgoCSWQYASABKAkiKAoYUmVxdWVzdEdldERpc2NvdW50",
+            "QnlDb2RlEgwKBENvZGUYASABKAkiVAoRUmVzdWx0R2V0RGlzY291bnQSGwoE",
+            "RGF0YRgBIAEoCzINLkRpc2NvdW50SW5mbxIRCglJc1N1Y2Nlc3MYAiABKAgS",
+            "DwoHTWVzc2FnZRgDIAEoCSJGCgxEaXNjb3VudEluZm8SCgoCSWQYASABKAkS",
+            "DgoGQW1vdW50GAIgASgFEgwKBENvZGUYAyABKAkSDAoEVXNlZBgEIAEoCCIg",
+            "ChJSZXF1ZXN0VXNlRGlzY291bnQSCgoCSWQYASABKAkiJgoRUmVzdWx0VXNl",
+            "RGlzY291bnQSEQoJaXNTdWNjZXNzGAEgASgIIjUKFVJlcXVlc3RBZGROZXdE",
+            "aXNjb3VudBIOCgZBbW91bnQYASABKAUSDAoEQ29kZRgCIAEoCSIpChRSZXN1",
+            "bHRBZGROZXdEaXNjb3VudBIRCglpc1N1Y2Nlc3MYASABKAgykwIKFERpc2Nv",
+            "dW50U2VydmljZVByb3RvEkIKEUdldERpc2NvdW50QnlDb2RlEhkuUmVxdWVz",
+            "dEdldERpc2NvdW50QnlDb2RlGhIuUmVzdWx0R2V0RGlzY291bnQSPgoPR2V0",
+            "RGlzY291bnRCeUlkEhcuUmVxdWVzdEdldERpc2NvdW50QnlJZBoSLlJlc3Vs",
+            "dEdldERpc2NvdW50EjYKC1VzZURpc2NvdW50EhMuUmVxdWVzdFVzZURpc2Nv",
+            "dW50GhIuUmVzdWx0VXNlRGlzY291bnQSPwoOQWRkTmV3RGlzY291bnQSFi5S",
+            "ZXF1ZXN0QWRkTmV3RGlzY291bnQaFS5SZXN1bHRBZGROZXdEaXNjb3VudEIY",
+            "qgIVRGlzY291bnRTZXJ2aWNlLlByb3RvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::DiscountService.Proto.RequestGetDiscountById), global::DiscountService.Proto.RequestGetDiscountById.Parser, new[]{ "Id" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DiscountService.Proto.RequestGetDiscountByCode), global::DiscountService.Proto.RequestGetDiscountByCode.Parser, new[]{ "Code" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::DiscountService.Proto.ResultGetDiscountByCode), global::DiscountService.Proto.ResultGetDiscountByCode.Parser, new[]{ "Id", "Amount", "Code", "Used" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DiscountService.Proto.ResultGetDiscount), global::DiscountService.Proto.ResultGetDiscount.Parser, new[]{ "Data", "IsSuccess", "Message" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DiscountService.Proto.DiscountInfo), global::DiscountService.Proto.DiscountInfo.Parser, new[]{ "Id", "Amount", "Code", "Used" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DiscountService.Proto.RequestUseDiscount), global::DiscountService.Proto.RequestUseDiscount.Parser, new[]{ "Id" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DiscountService.Proto.ResultUseDiscount), global::DiscountService.Proto.ResultUseDiscount.Parser, new[]{ "IsSuccess" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DiscountService.Proto.RequestAddNewDiscount), global::DiscountService.Proto.RequestAddNewDiscount.Parser, new[]{ "Amount", "Code" }, null, null, null, null),
@@ -52,6 +58,204 @@ namespace DiscountService.Proto {
 
   }
   #region Messages
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class RequestGetDiscountById : pb::IMessage<RequestGetDiscountById>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<RequestGetDiscountById> _parser = new pb::MessageParser<RequestGetDiscountById>(() => new RequestGetDiscountById());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<RequestGetDiscountById> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::DiscountService.Proto.DiscountprotobufReflection.Descriptor.MessageTypes[0]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RequestGetDiscountById() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RequestGetDiscountById(RequestGetDiscountById other) : this() {
+      id_ = other.id_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RequestGetDiscountById Clone() {
+      return new RequestGetDiscountById(this);
+    }
+
+    /// <summary>Field number for the "Id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private string id_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Id {
+      get { return id_; }
+      set {
+        id_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as RequestGetDiscountById);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(RequestGetDiscountById other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Id.Length != 0) hash ^= Id.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Id.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Id.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(RequestGetDiscountById other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Id.Length != 0) {
+        Id = other.Id;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RequestGetDiscountByCode : pb::IMessage<RequestGetDiscountByCode>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -67,7 +271,7 @@ namespace DiscountService.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::DiscountService.Proto.DiscountprotobufReflection.Descriptor.MessageTypes[0]; }
+      get { return global::DiscountService.Proto.DiscountprotobufReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -251,21 +455,21 @@ namespace DiscountService.Proto {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class ResultGetDiscountByCode : pb::IMessage<ResultGetDiscountByCode>
+  public sealed partial class ResultGetDiscount : pb::IMessage<ResultGetDiscount>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<ResultGetDiscountByCode> _parser = new pb::MessageParser<ResultGetDiscountByCode>(() => new ResultGetDiscountByCode());
+    private static readonly pb::MessageParser<ResultGetDiscount> _parser = new pb::MessageParser<ResultGetDiscount>(() => new ResultGetDiscount());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<ResultGetDiscountByCode> Parser { get { return _parser; } }
+    public static pb::MessageParser<ResultGetDiscount> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::DiscountService.Proto.DiscountprotobufReflection.Descriptor.MessageTypes[1]; }
+      get { return global::DiscountService.Proto.DiscountprotobufReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -276,7 +480,7 @@ namespace DiscountService.Proto {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ResultGetDiscountByCode() {
+    public ResultGetDiscount() {
       OnConstruction();
     }
 
@@ -284,7 +488,288 @@ namespace DiscountService.Proto {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ResultGetDiscountByCode(ResultGetDiscountByCode other) : this() {
+    public ResultGetDiscount(ResultGetDiscount other) : this() {
+      data_ = other.data_ != null ? other.data_.Clone() : null;
+      isSuccess_ = other.isSuccess_;
+      message_ = other.message_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ResultGetDiscount Clone() {
+      return new ResultGetDiscount(this);
+    }
+
+    /// <summary>Field number for the "Data" field.</summary>
+    public const int DataFieldNumber = 1;
+    private global::DiscountService.Proto.DiscountInfo data_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::DiscountService.Proto.DiscountInfo Data {
+      get { return data_; }
+      set {
+        data_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "IsSuccess" field.</summary>
+    public const int IsSuccessFieldNumber = 2;
+    private bool isSuccess_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsSuccess {
+      get { return isSuccess_; }
+      set {
+        isSuccess_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Message" field.</summary>
+    public const int MessageFieldNumber = 3;
+    private string message_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Message {
+      get { return message_; }
+      set {
+        message_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ResultGetDiscount);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ResultGetDiscount other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Data, other.Data)) return false;
+      if (IsSuccess != other.IsSuccess) return false;
+      if (Message != other.Message) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (data_ != null) hash ^= Data.GetHashCode();
+      if (IsSuccess != false) hash ^= IsSuccess.GetHashCode();
+      if (Message.Length != 0) hash ^= Message.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (data_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Data);
+      }
+      if (IsSuccess != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(IsSuccess);
+      }
+      if (Message.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Message);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (data_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Data);
+      }
+      if (IsSuccess != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(IsSuccess);
+      }
+      if (Message.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Message);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (data_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Data);
+      }
+      if (IsSuccess != false) {
+        size += 1 + 1;
+      }
+      if (Message.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Message);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ResultGetDiscount other) {
+      if (other == null) {
+        return;
+      }
+      if (other.data_ != null) {
+        if (data_ == null) {
+          Data = new global::DiscountService.Proto.DiscountInfo();
+        }
+        Data.MergeFrom(other.Data);
+      }
+      if (other.IsSuccess != false) {
+        IsSuccess = other.IsSuccess;
+      }
+      if (other.Message.Length != 0) {
+        Message = other.Message;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (data_ == null) {
+              Data = new global::DiscountService.Proto.DiscountInfo();
+            }
+            input.ReadMessage(Data);
+            break;
+          }
+          case 16: {
+            IsSuccess = input.ReadBool();
+            break;
+          }
+          case 26: {
+            Message = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (data_ == null) {
+              Data = new global::DiscountService.Proto.DiscountInfo();
+            }
+            input.ReadMessage(Data);
+            break;
+          }
+          case 16: {
+            IsSuccess = input.ReadBool();
+            break;
+          }
+          case 26: {
+            Message = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class DiscountInfo : pb::IMessage<DiscountInfo>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<DiscountInfo> _parser = new pb::MessageParser<DiscountInfo>(() => new DiscountInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<DiscountInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::DiscountService.Proto.DiscountprotobufReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public DiscountInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public DiscountInfo(DiscountInfo other) : this() {
       id_ = other.id_;
       amount_ = other.amount_;
       code_ = other.code_;
@@ -294,8 +779,8 @@ namespace DiscountService.Proto {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ResultGetDiscountByCode Clone() {
-      return new ResultGetDiscountByCode(this);
+    public DiscountInfo Clone() {
+      return new DiscountInfo(this);
     }
 
     /// <summary>Field number for the "Id" field.</summary>
@@ -349,12 +834,12 @@ namespace DiscountService.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as ResultGetDiscountByCode);
+      return Equals(other as DiscountInfo);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(ResultGetDiscountByCode other) {
+    public bool Equals(DiscountInfo other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -466,7 +951,7 @@ namespace DiscountService.Proto {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(ResultGetDiscountByCode other) {
+    public void MergeFrom(DiscountInfo other) {
       if (other == null) {
         return;
       }
@@ -574,7 +1059,7 @@ namespace DiscountService.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::DiscountService.Proto.DiscountprotobufReflection.Descriptor.MessageTypes[2]; }
+      get { return global::DiscountService.Proto.DiscountprotobufReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -772,7 +1257,7 @@ namespace DiscountService.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::DiscountService.Proto.DiscountprotobufReflection.Descriptor.MessageTypes[3]; }
+      get { return global::DiscountService.Proto.DiscountprotobufReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -970,7 +1455,7 @@ namespace DiscountService.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::DiscountService.Proto.DiscountprotobufReflection.Descriptor.MessageTypes[4]; }
+      get { return global::DiscountService.Proto.DiscountprotobufReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1205,7 +1690,7 @@ namespace DiscountService.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::DiscountService.Proto.DiscountprotobufReflection.Descriptor.MessageTypes[5]; }
+      get { return global::DiscountService.Proto.DiscountprotobufReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

@@ -1,4 +1,5 @@
 
+using DiscountService.GRPC;
 using DiscountService.Infrastructure.Contexts;
 using DiscountService.Infrastructure.MappingProfile;
 using DiscountService.Model.Services.Interface;
@@ -18,6 +19,8 @@ namespace DiscountService
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddGrpc();
 
             builder.Services.AddDbContext<DiscountDataBaseContext>(o => o.UseSqlServer
                 (builder.Configuration["DiscountConnection"]));
@@ -39,6 +42,16 @@ namespace DiscountService
 
             app.UseAuthorization();
 
+            //app.UseEndpoints(endpoints =>
+            //    {
+            //        endpoints.MapGrpcService<GRPCDiscountService>();
+
+            //        endpoints.MapControllers();
+            //    }
+            //);
+
+
+            app.MapGrpcService<GRPCDiscountService>();
 
             app.MapControllers();
 
